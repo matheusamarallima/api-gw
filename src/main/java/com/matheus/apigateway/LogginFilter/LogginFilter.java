@@ -13,7 +13,7 @@ public class LogginFilter implements GlobalFilter {
     private Logger logger = (Logger) LoggerFactory.getLogger(LogginFilter.class);
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-        logger.info("Original request path - > {}");
+//        logger.info("Original request path - > {}");
         return chain.filter(exchange);
     }
 }
